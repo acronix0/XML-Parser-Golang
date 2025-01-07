@@ -15,7 +15,7 @@ type Category interface {
 }
 
 type Product interface {
-	UpdateOrCreate(ctx context.Context, products []productModel.Product) error
+	UpdateOrCreate(ctx context.Context, products map[string]productModel.Product) error
 }
 
 type RepositoryManager interface{
