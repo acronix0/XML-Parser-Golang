@@ -1,0 +1,18 @@
+env: "local"
+
+database:
+  host: "localhost"
+  port: 5432
+  name: parser
+  username: "postgres"
+  password: "postgres"
+
+grpc:
+  port: 4404
+  timeout: 5s
+
+xml:
+  first_file_path: "../data/import.xml"
+  second_file_path: "../data/offers.xml"
+
+migrations_folder: "../migrations"
